@@ -1,4 +1,3 @@
-use std::fmt::Display;
 
 pub fn heap_sort<T>(list: &mut [T])
 where
@@ -85,7 +84,7 @@ where
 
 pub fn insert_sort<T>(list: &mut [T])
 where
-    T: PartialOrd + Copy + Display,
+    T: PartialOrd + Copy,
 {
     if list.len() < 2 {
         return;
